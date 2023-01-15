@@ -4,8 +4,10 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import Update from "./pages/Update";
+import supabase from "./config/supabaseClient";
 
 function App() {
+  console.log(supabase);
   return (
     <BrowserRouter>
       <nav>
